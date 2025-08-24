@@ -5,16 +5,26 @@ Vamos a crear un pgorama en C que:
 2. Reserve memoria dinámicamente para almacenarlos.
 3. Calcule el promedio y el máximo
 4. Libere memoria antes de terminar.
+Ejecucion:
+gcc promedio_max.c  -o promedio_max
+
+& ->  dame la direccion
+* -> dame el valor que hay en esa direccion
+
+scanf("%f", &numeros[i]); significa:
+
+“Lee un número flotante del teclado y guárdalo en la dirección del elemento i del arreglo dinámico numeros.”
+
 */
 
-# include <stdio.c>
+# include <stdio.h>
 # include <stdlib.h>
 
 int  main(){
 	int n,i;
         float *numeros;
         float suma=0,maximo;
-	printf("¿Cuantos numeros deseas ingresar?");
+	printf("¿Cuantos numeros deseas ingresar? ");
         scanf("%d",&n);
 
 	//reservar memoria
@@ -29,7 +39,7 @@ int  main(){
            scanf("%f",&numeros[i]);
            suma+=numeros[i];
            if(i==0||numeros[i]>maximo){
-              maximo = numeros[i]
+              maximo = numeros[i];
            }
 	}
         //Resultado

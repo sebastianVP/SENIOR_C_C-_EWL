@@ -40,8 +40,9 @@ struct Sensor {
 
 Ejemplo de organización:
 
-
+ ```
 proyecto/
 ├── sensor.h
 ├── sensor.c
 └── main.c
+ ```

@@ -12,13 +12,13 @@
 
 * Permiten agrupar distintos tipos de datos bajo un solo nombre.
 
-´´´
+ ```
 struct Sensor {
     int id;
     float lectura;
     char nombre[20];
 };
-´´´
+ ```
 
 * Se pueden declarar arrays de estructuras o punteros a estructuras.
 
@@ -40,9 +40,8 @@ struct Sensor {
 
 Ejemplo de organización:
 
-´´´
+
 proyecto/
 ├── sensor.h
 ├── sensor.c
 └── main.c
-´´´
